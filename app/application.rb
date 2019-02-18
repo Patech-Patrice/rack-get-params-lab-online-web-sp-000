@@ -38,4 +38,13 @@ class Application
       return "We don't have that item"
     end
   end
-end
+  
+  def add_item_to_cart(item)
+      if @@items.include?(item)
+        @@cart << item
+        return "added #{item}"
+      else
+        return "We don't have that item"
+      end
+    end
+  end
