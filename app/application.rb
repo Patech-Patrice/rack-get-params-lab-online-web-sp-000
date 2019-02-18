@@ -31,13 +31,9 @@ class Application
   end
 
   def handle_search(search_term)
-    if @@items.include?(search_term)
-      @@cart << item
-      return "added #{item}"
-    else
-      return "We don't have that item"
-    end
+    return "Couldn't find #{search_term}"
   end
+end  
   
   def add_item_to_cart(item)
       if @@items.include?(item)
