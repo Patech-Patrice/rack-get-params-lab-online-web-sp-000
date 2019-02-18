@@ -33,8 +33,8 @@ class Application
   def handle_search(search_term)
     return "Couldn't find #{search_term}"
   end
-end  
-  
+end
+
   def add_item_to_cart(item)
       if @@items.include?(item)
         @@cart << item
